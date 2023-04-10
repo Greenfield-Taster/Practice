@@ -1,0 +1,93 @@
+
+.middle {
+    margin: 0;
+    max-width: 1920px;
+
+}
+.MiddleList {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px 175px;
+}
+.MiddleItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.MiddleIco {
+    margin-bottom: 20px;
+}
+.MiddleVis {
+    margin: 70px 5 5 5;
+    display: flex;
+    flex-direction: column;   
+} 
+
+.MiddleVision {
+    display: flex;
+    justify-content: center;
+}
+.vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.MiddlePoints {
+    width: 48px;
+    height: 6;
+    margin: 30px 0;
+    margin-left: 42px;
+}
+.MiddleText {
+    width: 450px;
+    height: 132px;
+    margin-left: 42px;
+    font-size:125%
+}
+.MiddlePhoto {
+    width: 545px;
+    height: 545px;
+}
+.MiddleTitle {
+    font-weight: bold;
+    margin-left: 42px;
+}
+.Agrideras {
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1920px;
+    padding: 60px 0;
+}
+.AgriderasTitle {
+    font-size: 50px;
+    font-weight:900
+}
+.LowerSysteme {
+    display: flex;
+}
+.LowerSystem {
+    display: flex;
+    max-height: 357px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+}
+.LowerIcons {
+    width: 183px;
+    margin: 30px 0;
+}
+.LowerText {
+    text-align: center;
+    width: 241px;
+    height: 52px;
+    font-size: 18px;
+}
+.LowerTitle {
+    color: green;
+    font-size: 24px;
+}

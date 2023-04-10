@@ -1,0 +1,102 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto';
+    color: #324950;
+    padding:0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 0;
+    margin: 0 auto;
+}
+.header {
+    width: 1920px;
+    height: 850px;
+}
+.banner {
+    position: absolute;
+    width: 1920px;
+    height: 850px;  
+}
+a.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #108f3a;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px;
+}
+.logotip {
+    width: 225px;
+    height: 113px;
+    margin: 10px 0;
+} 
+.head{
+    position: absolute;
+    margin: 20px auto;
+    width: 1130px;
+    height: 113px;
+    left: 388px;
+    right: 405px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.HeadSerch{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.search {
+    width: 350px;
+    height: 29px;
+    border-bottom: solid 1px black;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+
+}
+.SearchInput{
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-weight:500;
+}
+.SerchIcon {
+    margin: 3px 0;
+    width: 18px;
+    height: 18px;
+}
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 499px;
+    height:25px;
+    font-weight:700;
+    margin-right: auto;
+}
+.MenuItem {
+    color: #3d5e68;
+}
+a {
+    color: #324950;
+}
+a:hover {
+    color: #324950;
+    text-decoration: none;
+}
+
+
+
+
