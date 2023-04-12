@@ -3,23 +3,25 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Home</title>
+        <title>Homepage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <div class="container">
-            <div class="header">
-                <div class="banner">
-                    <img src="img/bg.png" >
-                </div>
+            <div class="header" >
                 <div class="head">
                     <img class="logotip" src="img/logo.png">
-                    <div class="HeadSerch">
+                    <div class="HeadSearch">
                         <div class="search">
                             <input class="SearchInput" type="text" placeholder="Search">
-                            <img class="SerchIcon" src="img/ico_search.png">
+                            <img class="SearchIcon" src="img/ico_search.png">
                         </div>
                         <ul class="Menu">
                             <li class="MenuItem"><a href="index.html">Home</a></li>
@@ -31,15 +33,14 @@
                         </ul>
                     </div>
                 </div> 
-            <div class="style">
+            <div class="headcontant">
                 <div class="headtext">
                     Agridera Seeds and Agriculture Ltd
                 </div>
                 <div>
-                    <a class="button">READ MORE</a>
+                    <button class="headButton">READ MORE</button>
                   </div>       
             </div>
-            
         </div>
             <div class="middle">
                 <ul class="MiddleList">
@@ -80,7 +81,7 @@
                             <h1 class="MiddleTitle">
                                 Vision
                             </h1>
-                            <img  class="MiddlePoints" src="img/Union.svg">
+                            <img  class="MiddlePoints" src="img/cross.svg">
                             <div class="MiddleText">
                                 We believe in long-term growth with an emphasis on the potential of emerging markets. We also support the global need of feeding the growing population.
                             </div>
@@ -95,7 +96,7 @@
                                 <h1 class="MiddleTitle">
                                     Mission
                                 </h1>
-                                <img class="MiddlePoints" src="img/Union.svg">
+                                <img class="MiddlePoints" src="img/cross.svg">
                                 <div class="MiddleText">
                                     Breeding and marketing seeds for advanced field crops and vegetable varieties that provide an added value to all supply chain partners.
                                 </div>
@@ -108,7 +109,7 @@
                     <h1 class="AgriderasTitle">
                         Agridera's main activities
                     </h1>
-                    <img class="MiddleIco" src="img/Union.svg">
+                    <img class="MiddleIco" src="img/cross.svg">
                     <div class="LowerSysteme">
                         <div class="LowerSystem">
                             <div class="LowerIco">
@@ -150,43 +151,32 @@
                 </div>
             </div>
 
-            <div class="footer">
-                <div class="FooterTop">
-                    <div class="FooterLink">
-                        <ul class="FooterList">
-                            <li class="FooterItem">PROFILE</li>
-                            <li class="FooterItem">MANAGEMENT</li>
-                            <li class="FooterItem">PRODUCTS</li>
-                            <li class="FooterItem">R&D</li>
-                            <li class="FooterItem">LINKS</li>
-                            <li class="FooterItem">SITEMAP</li>
-                            <li class="FooterItem">CONTACT</li>
-                        </ul>
+            <footer>
+                <div id="footer_first">
+                    <div>
+                       <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Managment</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul> 
                     </div>
-                    <div class="FooterLink">
-                        <ul class="Social">
-                            <li class="FooterSocial">
-                                <img src="img/linkedin 5 4.svg">
-                            </li>
-                            <li class="FooterSocial">
-                                <img src="img/Ico_inst.svg">
-                            </li>
-                            <li class="FooterSocial">
-                                <img src="img/Ico_tube.svg">
-                            </li>
-                            <li class="FooterSocial">
-                                <img src="img/Ico_tw.svg">
-                            </li>
-                            <li class="FooterSocial">
-                                <img src="img/Ico_fb.svg">
-                            </li>
-                        </ul>
+                    
+                    <div>
+                        <a href="#"><img src="./img/Ico_fb.svg" alt=""></a>
+                        <a href="#"><img src="./img/Ico_inst.svg" alt=""></a>
+                        <a href="#"><img src="./img/Ico_tube.svg" alt=""></a>
+                        <a href="#"><img src="./img/Ico_tw.svg" alt=""></a>
+                        <a href="#"><img src="./img/linkedin 5 4.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="FooterBottom">
-                    <p class="FooterText">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+                <div id="footer_second">
+                    <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
                 </div>
-            </div>
+            </footer>
         </div>
     </body>
 </html>

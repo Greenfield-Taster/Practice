@@ -5,7 +5,6 @@
 	font-style: normal;
 }
 .headtext{
-    position: absolute;
     font-size: 50px;
     color:#8a6013;
     top: 35%;
@@ -18,6 +17,8 @@ body {
     color: #324950;
     padding:0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -26,26 +27,31 @@ body {
     margin: 0 auto;
 }
 .header {
-    width: 1920px;
+    width: 100%;
     height: 850px;
+    background-image: url('./img/bg.png');
+    padding: 20px;
 }
 .banner {
     position: absolute;
     width: 1920px;
     height: 850px;  
 }
-a.button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.headButton {
     background-color: #108f3a;
     font-size: 16px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 0px;
+    color: #fff;
+}
+.headcontant{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 229px;
+    text-align: center;
+    gap: 76px;
 }
 .logotip {
     width: 225px;
@@ -53,22 +59,19 @@ a.button {
     margin: 10px 0;
 } 
 .head{
-    position: absolute;
-    margin: 20px auto;
     width: 1130px;
     height: 113px;
     left: 388px;
     right: 405px;
     display: flex;
     justify-content: space-between;
-    
+    margin: 0 auto;
 }
-.HeadSerch{
+.HeadSearch{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    gap: 15px;
 }
 .search {
     width: 350px;
@@ -86,7 +89,7 @@ a.button {
     outline: none;
     font-weight:500;
 }
-.SerchIcon {
+.SearchIcon {
     margin: 3px 0;
     width: 18px;
     height: 18px;
@@ -97,7 +100,7 @@ a.button {
     list-style-type: none;
     width: 499px;
     height:25px;
-    font-weight:700;
+    font-weight:500;
     margin-right: auto;
 }
 .MenuItem {
@@ -110,55 +113,6 @@ a:hover {
     color: #324950;
     text-decoration: none;
 }
-.FooterTop {
-    display: flex;
-    justify-content: space-between;
-    background-color: #2D3F45;
-}
-.FooterItem {
-    color: #FFFFFF;
-    margin-right: 45px;
-}
-.FooterLink {
-    display: flex;
-    justify-content: space-between;
-}
-.FooterList {
-    margin-left: 400px;
-    margin-top: 30px;
-    list-style-type: none;
-    display: flex;
-    width: 724px;
-    height: 23px;
-}
-.Social{
-    display:flex;
-    list-style-type: none;
-    margin-right: 400px;
-}
-.footer {
-    width: 1920px;
-    height: 76px;
-}
-.FooterSocial {
-    margin-left: 10px;
-    margin-top: 25px;
-}
-.FooterBottom {
-    width: 1920px;
-    height: 51px;
-    background-color: #324950;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.FooterText {
-    font-size: 14px;
-    color: #B9B9B9;
-    margin: 0;
-    padding: 0;
-}
-
 .middle {
     margin: 0;
     max-width: 1920px;
@@ -183,6 +137,9 @@ a:hover {
     margin: 70px 5 5 5;
     display: flex;
     flex-direction: column;   
+    background-image: url('./img/Union.png');
+    background-color:#E5E5E5;
+    height: fit-content;
 } 
 
 .MiddleVision {
@@ -219,7 +176,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1920px;
+    width: 100%;
     padding: 60px 0;
 }
 .AgriderasTitle {
@@ -251,3 +208,68 @@ a:hover {
     color: green;
     font-size: 24px;
 }
+#footer_first{
+    padding: 27px 0 10px 0;
+    background-color: #2D3F45;
+    display: flex;
+    justify-content: space-around;
+}
+#footer_first ul{
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    color: #fff;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+}
+#footer_first a{
+    color: #fff;
+}
+.footer_first div{
+    align-items: center;
+    display: flex;
+}
+.footer_first div img{
+    width: 30px;
+    height: 30px;
+}
+#footer_second{
+    
+    padding: 18px 0 13px 0;
+    background-color: #50676e;
+    text-align: center;
+    color: #fff;
+}
+#footer_second p{
+    margin: 0;
+}
+/* .t-one-header{
+    position: absolute;
+width: 1920px;
+height: 122px;
+left: 0px;
+top: 0px;
+display: flex;
+justify-content: space-between;
+margin-left: auto;
+background: #FFFFFF;
+box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+}
+.t-one-header img{
+    position: absolute;
+width: 166px;
+height: 83px;
+left: 394px;
+top: 20px;
+}
+.t-head{
+    position: absolute;
+width: 1920px;
+height: 122px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+} */
