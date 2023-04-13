@@ -98,12 +98,15 @@ a:hover {
 .middle-page{
     display: flex;
     flex-direction: column;
-    padding: 50px 405px;
+    padding: 0 450px 0 405px;
     background-color: #E5E5E5;
     background-image: url('./img/Union-tomato.png');
     background-repeat: no-repeat;
+    background-position: center center;
+  background-size: cover;
     margin: 0 auto;
     justify-content: center;
+    align-items: center;
 }
 .middle-page>p{
     color: #57984C;
