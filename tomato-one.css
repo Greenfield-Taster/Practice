@@ -19,6 +19,7 @@ body {
     justify-content: center;
     width: 100%;
     margin: 0;
+    zoom: 0.8;
 }
 .container {
     width: 100%;
@@ -68,11 +69,16 @@ box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
     border: 0;
     outline: none;
     font-weight:500;
+    font-size: 16px;
 }
 .SearchIcon {
     margin: 3px 0;
     width: 18px;
     height: 18px;
+}
+.return-link{
+    display: flex;
+    justify-content: space-between;
 }
 .Menu{
     display: flex;
