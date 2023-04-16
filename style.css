@@ -28,18 +28,13 @@ body {
   background-size: cover;
 }
 .head{
-    width: 1130px;
-    height: 113px;
-    left: 388px;
-    right: 405px;
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: space-around;
 }
 .logotip {
     width: 166px;
     height: 83px;
-    margin: 10px 0;
+    margin-top: 15px;
 } 
 .HeadSearch{
     display: flex;
@@ -80,6 +75,13 @@ body {
 }
 .MenuItem {
     color: #3d5e68;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
 }
 a {
    color: inherit;
@@ -132,83 +134,74 @@ a:hover {
 .MiddleIco {
     margin-bottom: 20px;
 }
-.MiddleVis {
-    margin: 70px 5 5 5;
+.content-first{
+    padding: 71px 0 100px 0;
+    text-align: left;
+    /* padding: 20px 175px; */
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+#block-first {
+    align-items: center;
     display: flex;
-    flex-direction: column;   
-    background-image: url('./img/Union.png');
-    background-color:#E5E5E5;
+    justify-content: space-around;
+}
+#first-img {
+    width: 33.75em;
+    height: 31.125em;
+}
+#block-first-first p {
+    width: 495px;
+}
+#block-second-first{
+    width: 495px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.bg-content{
+    background-image: url(./img/Union.png);
     background-repeat: no-repeat;
     background-position: center center;
   background-size: cover;
-    height: fit-content;
-} 
-
-.MiddleVision {
-    display: flex;
-    justify-content: center;
+  width: 100%;
 }
-.vision {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.MiddlePoints {
-    width: 48px;
-    height: 6;
-    margin: 30px 0;
-    margin-left: 42px;
-}
-.MiddleText {
-    width: 450px;
-    height: 132px;
-    margin-left: 42px;
-    font-size:125%
-}
-.MiddlePhoto {
-    width: 545px;
-    height: 545px;
-}
-.MiddleTitle {
-    font-weight: bold;
-    margin-left: 42px;
-}
-.Agrideras {
+.content-second{
     background-color: #EDEDED;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 60px 0;
-}
-.AgriderasTitle {
-    font-size: 50px;
-    font-weight:900
-}
-.LowerSysteme {
-    display: flex;
-}
-.LowerSystem {
-    display: flex;
-    max-height: 357px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 40px;
-}
-.LowerIcons {
-    width: 183px;
-    margin: 30px 0;
-}
-.LowerText {
     text-align: center;
-    width: 241px;
-    height: 52px;
-    font-size: 18px;
+    padding-top: 70px;
 }
-.LowerTitle {
+#block-second {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+#img-content-second {
+    align-items: center;
+    display: flex;
+}
+#content-second-block{
+    padding-bottom: 91px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#content-second-block figure {
+    text-align: center;
+}
+#content-second-block figcaption {
     color: green;
-    font-size: 24px;
+    font-weight: 600;
+}
+#figure-1, #figure-2, #figure-3 {
+    color: #324950;
+    width: 243px;
+    margin: 0 auto;
 }
 #footer_first{
     padding: 27px 0 10px 0;

@@ -22,13 +22,15 @@ body {
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
 }
 .head{
-    width: 1130px;
+    /* width: 1130px;
     height: 113px;
     left: 388px;
     right: 405px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto; */
+    display: flex;
+    justify-content: space-around;
 }
 .logotip {
     width: 166px;
@@ -166,6 +168,42 @@ border: 1px solid #DADADA;
 border-radius: 10px;
 line-height: 150%;
 margin-right: 30px;
+}
+.our-adress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    background-color: #FFFFFF;
+}
+.green{
+    font-family: 'Roboto Slab';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 142.7%;
+color: #57984C;
+}
+.line-adress{
+    border: 1px solid #57984C;
+    width: 183px;
+    height: 0px;
+    margin: 0 auto;
+}
+.our-adress span{
+    color: green;
+}
+.p-ob{
+    font-family: 'Roboto Slab';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 150%;
+text-align: center;
+color: #324950;
+margin: 0px;
 }
 #footer_first{
     padding: 27px 0 10px 0;
