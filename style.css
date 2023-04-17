@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    background-color: #fefbfb;
 }
 .container {
     width: 100%;
@@ -26,6 +27,14 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
   background-size: cover;
+}
+.header-all{
+    width: 100%;
+    height: 122px;
+    padding-top: 20px 405px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
 }
 .head{
     display: flex;
@@ -50,7 +59,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-
 }
 .SearchInput{
     background: transparent;
@@ -63,6 +71,11 @@ body {
     margin: 3px 0;
     width: 18px;
     height: 18px;
+}
+.return-link{
+    display: flex;
+    justify-content: space-between;
+    color: #57984C;
 }
 .Menu{
     display: flex;
@@ -115,9 +128,28 @@ a:hover {
     left: 29%;
     font-weight:500
 }
+.middle-page{
+    display: flex;
+    flex-direction: column;
+    padding: 0 450px 0 405px;
+    background-color: #E5E5E5;
+    background-image: url('./img/Union-tomato.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+  background-size: cover;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.middle-page>p{
+    color: #57984C;
+}
 .middle {
     margin: 0;
     max-width: 1100em;
+}
+.middle-all{
+    background-color: #e4dede;
 }
 .MiddleList {
     display: flex;
@@ -239,3 +271,209 @@ img {
 #footer_second p{
     margin: 0;
 }
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+}
+.textBlock h4{
+color: #324950;
+font-size: 44px;
+font-weight: 700;
+}
+.blockInText{
+    padding: 0 26px;
+    border-left: 4px solid #EB5757;
+    border-radius: 3px;
+    margin-bottom: 33px;
+}
+.sortTomato{
+    gap: 30px;
+    padding: 0 22px;
+    align-items: center;
+    height: 449.5px;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+}
+.blockInText-second{
+    padding: 0 26px;
+    border-left: 4px solid #EB5757;
+    border-radius: 3px;
+    margin: 47px 0;
+}
+.tomatos-block{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    column-gap: 30px;
+    align-items: center;
+}
+#tomato{
+    margin-bottom: 0;
+    color: #57984C;
+    text-align: center;
+    background-color: #fff;
+}
+.tomatos-block figure {
+    overflow-y: hidden;
+    width: 350px;
+    height: 310px;
+}
+.tomatos-block p{
+    margin-bottom: 0;
+}
+.middle-text{
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    }
+    .red-text{
+        color: #CF2333;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .characteristics{
+        padding-bottom: 12px;
+        color: #57984C;
+        border-bottom: #57984C 1px solid;
+        width: 183px;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    .download-block{
+        text-align: right;
+        margin: 30px 0;
+    }
+    .download-block button{
+        color: #57984C;
+    border: 2px solid #57984C;
+    border-radius: 60px;
+    cursor: pointer;
+    padding: 11px;
+    align-items: center;
+    width: 225px;
+    height: 55px;
+    }
+    .contant-contact{
+        max-width: 69.375em; 
+        margin: 0 auto; 
+      padding-top: 51px;
+      position: relative;
+      height: 922.5px;
+    }
+    .content-anketa{
+        display: flex;
+        width: 100%;
+        height: 763px;
+    }
+    .right-content{
+        margin-left: 125px;
+    }
+    .left-content input{
+        box-sizing: border-box;
+        margin-top: 10.5px;
+        margin-bottom: 20px;
+        border: 1px solid #DADADA;
+        border-radius: 10px;
+        width: 350px;
+        height: 45px;
+    }
+    .right-content select{
+        width: 635px;
+        height: 45px;
+        margin-top: 10.5px;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        border-radius: 10px;
+    }
+    .right-content button{
+        width: 255px;
+    height: 55px;
+    color: white;
+    background: #57984C;
+    border: none;
+    border-radius: 60px;
+    }
+    .sumbit-kapcha{
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .kaptcha{
+        margin-right: 10px;
+    }
+    .input1, .input2{
+        width: 635px;
+        height: 42px;
+        margin-top: 10.5px;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        line-height: 150%;
+    }
+        
+    .input3{
+        width: 633.9px;
+        height: 342.75px;
+        margin-top: 10.5px;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        border-radius: 10px;
+        line-height: 150%;
+        resize: none;
+    }
+        
+    .input4{
+    width: 225px;
+    height: 45px;
+    margin-top: 10.5px;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    line-height: 150%;
+    margin-right: 30px;
+    }
+    .our-adress{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 250px;
+        background-color: #FFFFFF;
+    }
+    .green{
+        font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 142.7%;
+    color: #57984C;
+    }
+    .line-adress{
+        border: 1px solid #57984C;
+        width: 183px;
+        height: 0px;
+        margin: 0 auto;
+    }
+    .our-adress span{
+        color: green;
+    }
+    .p-ob{
+        font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: #324950;
+    margin: 0px;
+    }
