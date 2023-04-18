@@ -366,7 +366,7 @@ font-weight: 700;
         margin: 0 auto; 
       padding-top: 51px;
       position: relative;
-      height: 922.5px;
+      height: fit-content;
     }
     .content-anketa{
         display: flex;

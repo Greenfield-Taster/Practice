@@ -16,7 +16,12 @@
       src="https://kit.fontawesome.com/54bb8b5ea5.js"
       crossorigin="anonymous"
     ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
     <div class="container">
@@ -46,7 +51,7 @@
         <form class="content-anketa">
           <div class="left-content">
             <label>Name *</label><br />
-            <input type="text" /><br />
+            <input type="text" required /><br />
             <label>Company Name</label><br />
             <input type="text" /><br />
             <label>Position</label><br />
@@ -58,11 +63,11 @@
             <label>Telephone</label><br />
             <input type="tel" /><br />
             <label>Email *</label><br />
-            <input type="email" /><br />
+            <input type="email" required /><br />
           </div>
           <div class="right-content">
             <label>You are a</label><br />
-            <select>
+            <select class="select">
               <option value="value1">seed producer</option>
               <option value="value2">2</option>
               <option value="value3">3</option></select
@@ -104,7 +109,7 @@
             </ul>
           </div>
 
-          <div>
+          <div id="icons">
             <a href="#"><img src="./img/Ico_fb.svg" alt="" /></a>
             <a href="#"><img src="./img/Ico_inst.svg" alt="" /></a>
             <a href="#"><img src="./img/Ico_tube.svg" alt="" /></a>
