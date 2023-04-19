@@ -29,12 +29,12 @@
         <div class="head">
           <div class="top-logo-img">
             <img class="burger-menu" src="./img/menu.svg" />
-            <img class="logotip" src="img/logo.png" />
+            <img style="height: fit-content; width: 200px;" class="logotip" src="./img/logo-grape.png" />
           </div>
           <div class="HeadSearch">
             <div class="search">
               <input class="SearchInput" type="text" placeholder="Search" />
-              <img class="SearchIcon" src="img/ico_search.png" />
+              <img class="SearchIcon" src="./img/ico_search.png" />
             </div>
             <ul class="Menu">
               <li class="MenuItem"><a href="index.html">Home</a></li>
@@ -47,19 +47,14 @@
           </div>
         </div>
       </div>
-<img style="width: 100%; height: 480px"  src="./img/image 7.png" />
+      <img style="width: 100%; height: 480px"  src="./img/main-grape.png" />
       
       <div class="middle-all">
         <div class="textBlock">
           <h4>Agridera Fresh Market Tomato Hybrids</h4>
           <img style="width: 35px; height: 35px" src="./img/cross.svg" />
           <p>
-            Agridera aims to be one of the world's leading companies in the
-            breeding, production, and marketing of tomato seeds. We invest
-            intensively in research and development to provide solutions to
-            growers and consumers in numerous countries around the world. In
-            particular, we breed improved disease-resistant cultivars adapted to
-            different markets globally.
+            Grapefruit is a large citrus fruit that is known for its sweet-tart flavor and refreshing taste. It has a round or slightly oblong shape and ranges in size from small to very large. The skin of the grapefruit is thick and tough, with a slightly bumpy texture. The color of the skin can vary depending on the variety of grapefruit, but it is usually yellow, green, or pink.
           </p>
           <p>
             Currently, emphasis is placed on combining Tomato Yellow Leaf Curl
@@ -70,129 +65,43 @@
             Fruit Virus).
           </p>
           <p>
-            In terms of horticultural traits, breeding is for earliness,
-            different fruit sizes, firmness, red fruit color, flavor, crack
-            resistance, shelf life, and high/low temperature fruit set.
-            Combinations of quality features and disease resistance are sought
-            in a variety of types, namely round and elongated shapes.
+            Grapefruit is a very nutritious fruit, as it is high in vitamin C, fiber, and antioxidants. It is often eaten as a healthy breakfast or snack, and is also used in a variety of recipes, including salads, desserts, and cocktails. Overall, grapefruit is a delicious and healthy fruit that is enjoyed by many people around the world.
           </p>
           <div class="blockInText">
-            Agirdera Tomato breeding programs are focusing on three main
-            segments: Greenhouse Indeterminate Tomatoes, Open-field
-            Indeterminate Tomatoes, and Bush Type Open-field Tomatoes.
+            Grapefruit is a good source of vitamin C, potassium, and fiber, and has been shown to have a number of health benefits.
           </div>
           <div class="sortTomato">
             <div id="sort1">
-              <h5><b>Greenhouse Tomato Breeding Program</b></h5>
+              <h5><b>United States</b></h5>
               <hr />
               <p>
-                This breeding is aimed for the Spanish and Turkish markets. For
-                single and cluster picks, round fruit shape and resistances of
-                TYLCV, TSWV, Nematodes and FORL (Fusarium oxysporum f.sp.
-                radicis-lycopersici). Some hybrids may include more resistances,
-                such as Cladosporium and Leveillula Taurica (Lv).
+                Grapefruit is grown in several states in the US, including Florida, Texas, and California. Florida is the largest producer of grapefruit in the US, and is known for its pink and red grapefruit varieties.
               </p>
             </div>
             <div id="sort2">
-              <h5><b>Open-field Indeterminate Tomatoes</b></h5>
+              <h5><b>Israel</b></h5>
               <hr />
               <p>
-                This breeding is for Brazilian, Moroccan, and Turkish markets.
-                The main focus is on large round shape fruits (200 grams plus);
-                and resistances of TYLCV, TSWV, Nematodes and FORL. In the near
-                future, F3 (Fusarium oxysporum f.sp. lycopersici) will be
-                included as basic resistance in our cultivars.
+                Israel is a major producer of grapefruit, with much of the fruit being exported to Europe and other parts of the world. Israeli grapefruit is known for its high quality and flavor.
               </p>
             </div>
             <div id="sort3">
-              <h5><b>Open-field Bush Type Tomatoes</b></h5>
+              <h5><b>South Africa</b></h5>
               <hr />
               <p>
-                This breeding is for Mediterranean markets. We breed round and
-                elongated shapes, standard sizes (140- 180 grams), and beef
-                sizes (min. 180 grams up to 300 grams and more). We combine the
-                resistances of TYLCV, TSWV and Nematodes as basic resistances in
-                our hybrids. However, some hybrids may include more resistances,
-                such as Cladosporium and Leveillula Taurica (Lv).
+                South Africa is another major producer of grapefruit, with the fruit being grown in several different regions of the country. South African grapefruit is known for its sweet and tangy flavor, and is often exported to Europe and other parts of the world.
               </p>
             </div>
           </div>
           <div class="blockInText-second">
-            Agridera operates through international and local distributers
-            around the world.
+            Grapefruit is a citrus fruit that is known for its tangy, slightly bitter taste. It is a large, round fruit with a yellow-orange skin that can range in thickness from thin to quite thick.
           </div>
           <div class="tomatos-block">
-            <figure id="tomato">
+            <figure v-for="product in products" v-bind:id="product.id">
               <div>
-                <p>
-                  TAG 1000 (TAG 853)<br />
-                  Tomato Determinate Red Standard Round
+                <p> 
+                  {{ product.title }}
                 </p>
-                <img src="./img/tomato-1.svg" />
-              </div>
-            </figure>
-            <figure id="tomato">
-              <div>
-                <p>
-                  TAG 1000 (TAG 853)<br />
-                  Tomato Determinate Red Standard Round
-                </p>
-                <img src="./img/tomato-2.svg" />
-              </div>
-            </figure>
-            <figure id="tomato">
-              <div>
-                <a style="color: #57984c" href="./Tomato-one.html">
-                  <p>
-                    TAG 1000 (TAG 853)<br />
-                    Tomato Determinate Red Standard Round
-                  </p>
-                  <img src="./img/tomato-3.svg" />
-                </a>
-              </div>
-            </figure>
-            <figure id="tomato">
-              <div>
-                <p>
-                  TAG 1000 (TAG 853)<br />Tomato Determinate Red Standard Round
-                </p>
-                <img src="./img/tomato-4.svg" />
-              </div>
-            </figure>
-            <figure id="tomato">
-              <div>
-                <p>
-                  TAG 1000 (TAG 853)<br />
-                  Tomato Determinate Red Standard Round
-                </p>
-                <img src="./img/tomato-5.svg" />
-              </div>
-            </figure>
-            <figure id="tomato">
-              <div>
-                <p>
-                  TAG 1000 (TAG 853)<br />
-                  Tomato Determinate Red Standard Round
-                </p>
-                <img src="./img/tomato-6.svg" />
-              </div>
-            </figure>
-            <figure id="tomato">
-              <div>
-                <p>
-                  TAG 1000 (TAG 853)<br />
-                  Tomato Determinate Red Standard Round
-                </p>
-                <img src="./img/tomato-7.svg" />
-              </div>
-            </figure>
-            <figure id="tomato">
-              <div>
-                <p>
-                  TAG 1000 (TAG 853)<br />
-                  Tomato Determinate Red Standard Round
-                </p>
-                <img src="./img/tomato-8.svg" />
               </div>
             </figure>
           </div>
@@ -226,5 +135,8 @@
       </footer>
     </div>
   </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
   </body>
 </html>

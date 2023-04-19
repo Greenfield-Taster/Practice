@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #fefbfb;
+  background-color: #fbfbfc;
 }
 .container {
   width: 100%;
@@ -53,6 +53,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 .search {
   width: 350px;
@@ -83,14 +85,24 @@ body {
 .Menu {
   display: flex;
   justify-content: space-between;
-  list-style-type: none;
+  list-style: none;
   width: 499px;
   height: 25px;
   font-weight: 500;
   margin-right: auto;
+  margin: 0;
+  padding: 0;
 }
 .MenuItem {
   color: #3d5e68;
+}
+.navbar-toggle {
+  display: none;
+}
+.navbar-toggle img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 .h1,
 .h2,
@@ -162,7 +174,7 @@ a:hover {
   max-width: 1100em;
 }
 .middle-all {
-  background-color: #e4dede;
+  background-color: #fcebec;
 }
 .MiddleList {
   display: flex;
@@ -252,7 +264,7 @@ img {
 }
 #footer_first {
   padding: 27px 0 10px 0;
-  background-color: #2d3f45;
+  background-color: #72395b;
   display: flex;
   justify-content: space-around;
 }
@@ -278,9 +290,9 @@ img {
 }
 #footer_second {
   padding: 18px 0 13px 0;
-  background-color: #50676e;
+  background-color: #996778;
   text-align: center;
-  color: #fff;
+  color: #4f2b4c;
 }
 #footer_second p {
   margin: 0;
@@ -305,7 +317,7 @@ img {
   gap: 30px;
   padding: 0 22px;
   align-items: center;
-  height: 449.5px;
+  height: 200px;
   display: flex;
   justify-content: space-around;
   background: #fff;
@@ -336,6 +348,84 @@ img {
 }
 .tomatos-block p {
   margin-bottom: 0;
+}
+#greip1 {
+  margin-bottom: 0;
+  color: #0a010f;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  background-image: url(./img/greip1.png);
+  background-size: cover;
+}
+#greip2 {
+  margin-bottom: 0;
+  color: #0a010f;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  background-image: url(./img/greip2.png);
+  background-size: cover;
+}
+#greip3 {
+  margin-bottom: 0;
+  color: #0a010f;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  background-image: url(./img/greip3.png);
+  background-size: cover;
+}
+#greip4 {
+  margin-bottom: 0;
+  color: #0a010f;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  background-image: url(./img/greip4.png);
+  background-size: cover;
+}
+#greip5 {
+  margin-bottom: 0;
+  color: #0a010f;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  background-image: url(./img/greip5.png);
+  background-size: cover;
+}
+#greip6 {
+  margin-bottom: 0;
+  color: #0a010f;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  background-image: url(./img/greip6.png);
+  background-size: cover;
+}
+#greip6 p {
+  padding: 10px 0;
+  background-color: #c69aac;
+}
+#greip5 p {
+  background-color: #c69aac;
+  padding: 10px 0;
+}
+#greip4 p {
+  background-color: #c69aac;
+  padding: 10px 0;
+}
+#greip3 p {
+  background-color: #c69aac;
+  padding: 10px 0;
+}
+#greip2 p {
+  background-color: #c69aac;
+  padding: 10px 0;
+}
+#greip1 p {
+  background-color: #c69aac;
+  padding: 10px 0;
 }
 .middle-text {
   display: flex;

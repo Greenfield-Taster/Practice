@@ -1,7 +1,6 @@
 @media (max-width: 768px) {
   * {
     overflow-x: hidden;
-    height: fit-content !important;
   }
   .header {
     align-items: center;
@@ -9,6 +8,9 @@
   }
   .header-all {
     width: 90%;
+  }
+  .container img {
+    height: fit-content !important;
   }
   .head {
     display: flex;
@@ -22,16 +24,74 @@
     width: 250px;
     height: fit-content;
   }
-  .burger-menu {
+  /* .burger-menu {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border-color: #000;
+    margin-top: 15px;
+  }
+  #burger-menu::before,
+  #burger-menu::after {
+    border-radius: 5px;
+    contain: "";
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+  }
+  #burger-menu::before {
+    border-radius: 5px;
+  }
+  #burger-menu::after {
+    bottom: 0;
+    border-radius: 5px;
+  }
+  #burger-menu span {
+    border-radius: 5px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  } */
+  /* .Menu {
+    display: none;
+  } */
+  /* .Menu.active {
+    position: relative;
+    background-color: #000;
+    width: 400px;
+    height: fit-content;
+  } */
+  .Menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .Menu li {
+    margin: 10px 0;
+  }
+  .Menu.active {
     display: flex;
-    margin-bottom: auto;
+  }
+  .Menu li:last-child {
+    margin-bottom: 0;
   }
   .top-logo-img {
     display: flex;
     flex-direction: row-reverse;
-  }
-  .Menu {
-    display: none;
   }
   .HeadSearch {
     display: flex;
@@ -193,17 +253,23 @@
   .download-block {
     text-align: center;
   }
+  .sortTomato {
+    flex-direction: column;
+    height: fit-content !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1180px) {
   * {
     overflow-x: hidden;
-    height: fit-content !important;
   }
   .header {
     align-items: center;
   }
   .header-all {
     width: 95%;
+  }
+  .container img {
+    height: fit-content !important;
   }
   .head {
     display: flex;
@@ -390,5 +456,10 @@
   }
   .download-block {
     text-align: center;
+  }
+  .sortTomato {
+    flex-direction: column;
+
+    height: fit-content !important;
   }
 }
