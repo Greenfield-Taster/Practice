@@ -8,6 +8,7 @@
   }
   .header-all {
     width: 90%;
+    height: fit-content !important;
   }
   .container img {
     height: fit-content !important;
@@ -250,7 +251,7 @@
     max-width: 100%;
     max-height: 100%;
   }
-  .download-block {
+  .addToCart-block {
     text-align: center;
   }
   .sortTomato {
@@ -267,6 +268,7 @@
   }
   .header-all {
     width: 95%;
+    height: fit-content !important;
   }
   .container img {
     height: fit-content !important;
@@ -454,7 +456,7 @@
     max-width: 100%;
     max-height: 100%;
   }
-  .download-block {
+  .addToCart-block {
     text-align: center;
   }
   .sortTomato {

@@ -97,12 +97,14 @@
             Grapefruit is a citrus fruit that is known for its tangy, slightly bitter taste. It is a large, round fruit with a yellow-orange skin that can range in thickness from thin to quite thick.
           </div>
           <div class="tomatos-block">
-            <figure v-for="product in products" v-bind:id="product.id">
-              <div>
-                <p> 
-                  {{ product.title }}
-                </p>
-              </div>
+            <figure v-for="p in products" v-bind:id="p.id">
+              <a :href="'Tomato-one.html#'+p.id">
+                <div>
+                  <p> 
+                    {{ p.title }}
+                  </p>
+                </div>
+              </a>
             </figure>
           </div>
         </div>

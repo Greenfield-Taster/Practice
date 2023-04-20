@@ -1,49 +1,82 @@
 var app = new Vue({
-  el: ".tomatos-block",
+  el: ".tomatos-block, .middle-text",
   data: {
     products: [
       {
         id: "greip1",
         title: "Pink grapefruit",
-        image: "./img/greip1.jpg",
+        image: "greip1.png",
         shortText: "Short description 1",
         desc: "Full description",
       },
       {
         id: "greip2",
         title: "White grapefruit",
-        image: "./img/greip2.jpg",
+        image: "greip2.png",
         shortText: "Short description 2",
         desc: "Full description",
       },
       {
         id: "greip3",
         title: "Ruby red grapefruit",
-        image: "./img/greip3.jpg",
+        image: "greip3.png",
         shortText: "Short description 3",
         desc: "Full description",
       },
       {
         id: "greip4",
         title: "Star ruby grapefruit",
-        image: "./img/greip4.jpg",
+        image: "greip4.png",
         shortText: "Short description 4",
         desc: "Full description",
       },
       {
         id: "greip5",
         title: "Oroblanco grapefruit",
-        image: "./img/greip5.jpg",
+        image: "greip5.png",
         shortText: "Short description 5",
         desc: "Full description",
       },
       {
         id: "greip6",
         title: "Marsh red grapefruit",
-        image: "./img/greip5.jpg",
+        image: "greip5.png",
         shortText: "Short description 6",
         desc: "Full description",
       },
     ],
+    product: [],
+    btnVisible: 0,
+  },
+  mounted: function () {
+    this.getProduct();
+  },
+  // methods: {
+  //   getProduct: function () {
+  //     if (window.location.hash != null) {
+  //       let id = window.location.hash.replace("#", "");
+  //       if (this.products != null && this.products.lenght > 0) {
+  //         for (let i in this.products) {
+  //           if (
+  //             this.products[i] != null &&
+  //             this.products[i].id != null &&
+  //             this.products[i].id == id
+  //           )
+  //             this.product = this.products[i];
+  //         }
+  //       }
+  //     }
+  //   },
+  // },
+  methods: {
+    getProduct: function () {
+      var id = window.location.hash.replace("#", "");
+      for (var i = 0; i < this.products.length; i++) {
+        if (this.products[i].id === id) {
+          this.product = this.products[i];
+          break;
+        }
+      }
+    },
   },
 });

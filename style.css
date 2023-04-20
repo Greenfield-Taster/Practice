@@ -21,7 +21,7 @@ body {
   height: 850px;
   padding-top: 20px 405px;
   padding: 20px;
-  background: #ffffff;
+  background: #c9bbbb;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
   background-image: url("./img/bg.png");
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ body {
   height: 122px;
   padding-top: 20px 405px;
   padding: 20px;
-  background: #ffffff;
+  background: #c9bbbb;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
 }
 .head {
@@ -80,7 +80,9 @@ body {
 .return-link {
   display: flex;
   justify-content: space-between;
-  color: #57984c;
+  color: #72395b;
+  font-weight: 650;
+  font-size: 20px;
 }
 .Menu {
   display: flex;
@@ -158,10 +160,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   background-color: #e5e5e5;
-  background-image: url("./img/Union-tomato.png");
+  /* background-image: url("./img/Union-tomato.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -445,19 +447,19 @@ img {
 }
 .characteristics {
   padding-bottom: 12px;
-  color: #57984c;
-  border-bottom: #57984c 1px solid;
+  color: #1b031a;
+  border-bottom: #13010f 1px solid;
   width: 200px;
   padding-top: 30px;
   font-size: 20px;
 }
-.download-block {
+.addToCart-block {
   text-align: right;
   margin: 30px 0;
 }
-.download-block button {
-  color: #57984c;
-  border: 2px solid #57984c;
+.addToCart-block button {
+  color: #400a47;
+  border: 2px solid #400a47;
   border-radius: 60px;
   cursor: pointer;
   padding: 11px;
