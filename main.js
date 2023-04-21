@@ -46,7 +46,7 @@ var app = new Vue({
       },
     ],
     product: [],
-    btnVisible: 0,
+    btnVisible: false,
   },
   mounted: function () {
     this.getProduct();
@@ -76,6 +76,17 @@ var app = new Vue({
           this.product = this.products[i];
           break;
         }
+      }
+    },
+    addToCart: function (id) {
+      var cart = [];
+      if (window.localStorage.getItem("cart")) {
+        cart = window.localStorage.getItem("cart").split(",");
+      }
+      if (cart.indexOf(String(id))) {
+        cart.push(id);
+        window.localStorage.setItem("cart", cart.join());
+        this.btnVisible = true;
       }
     },
   },

@@ -94,10 +94,14 @@
           <div class="right-text">
             <img width="540px" height="398px" :src="'./img/'+product.image" />
             <div class="addToCart-block">
-              <button>
-                <i class="fa-solid fa-file-pdf fa-2xl"></i>
+              <button
+                v-if="btnVisible==0"
+                @click.prevent="addToCart(product.id);"
+                btnVisible="true"
+              >
                 Add to cart
               </button>
+              <button v-if="btnVisible==1">Added to cart</button>
             </div>
           </div>
         </div>
