@@ -1,5 +1,5 @@
 var app = new Vue({
-  el: ".tomatos-block, .middle-text",
+  el: ".tomatos-block, .middle-text , .contant-contact",
   data: {
     products: [
       {
@@ -40,35 +40,22 @@ var app = new Vue({
       {
         id: "greip6",
         title: "Marsh red grapefruit",
-        image: "greip5.png",
+        image: "greip6.png",
         shortText: "Short description 6",
         desc: "Full description",
       },
     ],
     product: [],
     btnVisible: false,
+    cart: [],
+    contactFields: [],
+    order: 0,
   },
   mounted: function () {
     this.getProduct();
     this.checkInCart();
+    this.getCart();
   },
-  // methods: {
-  //   getProduct: function () {
-  //     if (window.location.hash != null) {
-  //       let id = window.location.hash.replace("#", "");
-  //       if (this.products != null && this.products.lenght > 0) {
-  //         for (let i in this.products) {
-  //           if (
-  //             this.products[i] != null &&
-  //             this.products[i].id != null &&
-  //             this.products[i].id == id
-  //           )
-  //             this.product = this.products[i];
-  //         }
-  //       }
-  //     }
-  //   },
-  // },
   methods: {
     getProduct: function () {
       var id = window.location.hash.replace("#", "");
@@ -91,15 +78,6 @@ var app = new Vue({
       }
     },
     checkInCart() {
-      // if (
-      //   this.product &&
-      //   this.product.id &&
-      //   window.localStorage
-      //     .getItem("cart")
-      //     .split(",")
-      //     .indexOf(String(this.product.id)) == true
-      // )
-      //   this.btnVisible == false;
       if (
         this.product &&
         this.product.id &&
@@ -109,6 +87,40 @@ var app = new Vue({
           .indexOf(String(this.product.id)) != -1
       )
         this.btnVisible = true;
+    },
+    getCart() {
+      if (window.localStorage.getItem("cart") != null) {
+        if (this.products != null && this.products.length > 0) {
+          for (let i in this.products) {
+            if (
+              this.products[i] != null &&
+              this.products[i].id != null &&
+              window.localStorage
+                .getItem("cart")
+                .split(",")
+                .indexOf(String(this.products[i].id)) != -1
+            )
+              this.cart.push(this.products[i]);
+          }
+        }
+      }
+    },
+    removeFromCart(id) {
+      let cart = [];
+      if (window.localStorage.getItem("cart") != null) {
+        cart = window.localStorage.getItem("cart").split(",");
+      }
+      if (cart.indexOf(String(id)) != -1) {
+        cart.splice(cart.indexOf(String(id)), 1);
+        window.localStorage.setItem("cart", cart.join(","));
+        this.cart = [];
+        this.getCart();
+      }
+    },
+    makeOrder() {
+      this.cart = [];
+      window.localStorage.setItem("cart", "");
+      this.order = 1;
     },
   },
 });

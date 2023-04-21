@@ -50,8 +50,33 @@
       <img style="width: 100%; height: 480px" src="./img/image 7.jpg" />
       <div class="contant-contact">
         <h1>Contact us</h1>
-        <img style="margin-bottom: 49px" src="./img/xrest.png" />
-        <form class="content-anketa">
+        <img style="margin-bottom: 49px" src="./img/cross.svg" />
+        <table v-if="cart!=''" class="contactTable">
+          <tr>
+            <th>Photo</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Options</th>
+          </tr>
+          <tr v-for="c in cart">
+            <td>
+              <img
+                class="ImgTableContact"
+                :src="'./img/'+c.image"
+                alt="no founded"
+              />
+            </td>
+            <td>{{ c.title }}</td>
+            <td>{{ c.desc }}</td>
+            <td><a href="#" @click.prevent="removeFromCart(c.id)">X</a></td>
+          </tr>
+        </table>
+        <form
+          action="Contact.html"
+          @submit.prevent="makeOrder()"
+          v-if="order==0"
+          class="content-anketa"
+        >
           <div class="left-content">
             <label>Name *</label><br />
             <input type="text" required /><br />
@@ -125,5 +150,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
