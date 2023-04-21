@@ -50,6 +50,7 @@ var app = new Vue({
   },
   mounted: function () {
     this.getProduct();
+    this.checkInCart();
   },
   // methods: {
   //   getProduct: function () {
@@ -88,6 +89,26 @@ var app = new Vue({
         window.localStorage.setItem("cart", cart.join());
         this.btnVisible = true;
       }
+    },
+    checkInCart() {
+      // if (
+      //   this.product &&
+      //   this.product.id &&
+      //   window.localStorage
+      //     .getItem("cart")
+      //     .split(",")
+      //     .indexOf(String(this.product.id)) == true
+      // )
+      //   this.btnVisible == false;
+      if (
+        this.product &&
+        this.product.id &&
+        window.localStorage
+          .getItem("cart")
+          .split(",")
+          .indexOf(String(this.product.id)) != -1
+      )
+        this.btnVisible = true;
     },
   },
 });
