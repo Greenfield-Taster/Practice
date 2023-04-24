@@ -4,7 +4,7 @@
     "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
     "icons": [
       {
-        "src": "./img/icons/app-icon-512x512.png",
+        "src": "img/icons/app-icon-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
       },
@@ -39,6 +39,7 @@
         "type": "image/png"
       }
     ],
+    "start_url": "/index.html",
     "display": "standalone",
     "icon": "./img/icons/app-icon-96x96.png",
     "theme_color": "#556B2F",
