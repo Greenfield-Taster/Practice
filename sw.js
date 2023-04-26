@@ -6,6 +6,7 @@ self.addEventListener("install", function (event) {
       cache.add("./index.html");
       cache.add("./style.css");
       cache.add("./img/logo.png");
+      cache.add("./img/ico_search.png");
       cache.add("/");
     })
   );
@@ -21,4 +22,8 @@ self.addEventListener("fetch", function (event) {
       else return fetch(event.request);
     })
   );
+});
+self.addEventListener("push", (event) => {
+  const notification = event.data.text();
+  self.registration.showNotification(notification, {});
 });
